@@ -6,6 +6,7 @@ import authRouter from './routes/auth.route.js';
 import customerRouter from './routes/customer.route.js';
 import loansRouter from './routes/loans.route.js';
 import officerRouter from './routes/officer.route.js';
+import path from "path";
 
 dotenv.config();
 
