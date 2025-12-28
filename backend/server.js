@@ -11,6 +11,7 @@ import path from "path";
 dotenv.config();
 
 const app = express();
+const _dirname = path.resolve();
 
 // Middleware
 app.use(cors());
