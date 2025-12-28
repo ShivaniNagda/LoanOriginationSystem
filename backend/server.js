@@ -1,14 +1,16 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import express from 'express';
 import cors from 'cors';
 import connectDB from './config/mongodb.js';
-import dotenv from 'dotenv';
+
 import authRouter from './routes/auth.route.js';
 import customerRouter from './routes/customer.route.js';
 import loansRouter from './routes/loans.route.js';
 import officerRouter from './routes/officer.route.js';
 import path from "path";
 
-dotenv.config();
+
 
 const app = express();
 const _dirname = path.resolve();
